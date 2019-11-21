@@ -9,6 +9,6 @@ conn = mysql.connector.connect(
 
 cursor = conn.cursor()
 
-query = cursor.execute("SELECT * FROM dictonariy")
+query = cursor.execute("SELECT * FROM dictonary WHERE Expression = 'inlay'")
 results = cursor.fetchall()
-print(results)
+print(results[0])
